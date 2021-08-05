@@ -216,7 +216,7 @@ def write_error_to_files(kind_string, all_error, error_avgs, error_mdn, breakpoi
 
 def main():
     # * Start Up * #
-    title: str = Figlet(font='larry3d').renderText('REU 2021')
+    title: str = Figlet(font='larry3d').renderText('AAAI 2021')
     SYSOUT.write(f'\033[34;1m{title}\033[00m')  # formatted start up message
     # log.debug('Started successfully')
 
