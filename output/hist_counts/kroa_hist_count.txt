@@ -1,0 +1,112 @@
+Testing Dataset for kroa (size 500):
+Force 1:  0
+Force 2:  1
+Force 3:  6
+Force 4:  54
+Force 5:  166
+Force 6:  168
+Force 7:  112
+Force 8:  55
+Force 9:  38
+Force 10: 17
+Force 11: 5
+Force 12: 2
+
+Training Dataset for kroa (size 500):
+Force 1:  0
+Force 2:  3
+Force 3:  42
+Force 4:  253
+Force 5:  718
+Force 6:  602
+Force 7:  474
+Force 8:  191
+Force 9:  154
+Force 10: 48
+Force 11: 15
+Force 12: 13
+
+Complete Dataset for kroa (size 500):
+Force 1:  0
+Force 2:  4
+Force 3:  48
+Force 4:  307
+Force 5:  884
+Force 6:  770
+Force 7:  586
+Force 8:  246
+Force 9:  192
+Force 10: 65
+Force 11: 20
+Force 12: 15
+
+Spike Data for kroa (size 500):
+Force 1:  0
+Force 2:  1
+Force 3:  3
+Force 4:  9
+Force 5:  30
+Force 6:  26
+Force 7:  15
+Force 8:  8
+Force 9:  5
+Force 10: 2
+Force 11: 0
+Force 12: 1
+
+Testing Dataset for kroa (size 1200):
+Force 1:  0
+Force 2:  1
+Force 3:  6
+Force 4:  54
+Force 5:  166
+Force 6:  168
+Force 7:  112
+Force 8:  55
+Force 9:  38
+Force 10: 17
+Force 11: 5
+Force 12: 2
+
+Training Dataset for kroa (size 1200):
+Force 1:  0
+Force 2:  3
+Force 3:  42
+Force 4:  253
+Force 5:  718
+Force 6:  602
+Force 7:  474
+Force 8:  191
+Force 9:  154
+Force 10: 48
+Force 11: 15
+Force 12: 13
+
+Complete Dataset for kroa (size 1200):
+Force 1:  0
+Force 2:  4
+Force 3:  48
+Force 4:  307
+Force 5:  884
+Force 6:  770
+Force 7:  586
+Force 8:  246
+Force 9:  192
+Force 10: 65
+Force 11: 20
+Force 12: 15
+
+Spike Data for kroa (size 1200):
+Force 1:  0
+Force 2:  0
+Force 3:  1
+Force 4:  8
+Force 5:  28
+Force 6:  24
+Force 7:  20
+Force 8:  7
+Force 9:  8
+Force 10: 2
+Force 11: 1
+Force 12: 0
+

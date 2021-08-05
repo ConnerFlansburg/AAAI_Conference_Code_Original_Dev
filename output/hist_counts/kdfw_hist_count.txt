@@ -1,0 +1,56 @@
+Testing Dataset for kdfw (size 500):
+Force 1:  0
+Force 2:  0
+Force 3:  1
+Force 4:  10
+Force 5:  72
+Force 6:  129
+Force 7:  187
+Force 8:  98
+Force 9:  72
+Force 10: 39
+Force 11: 9
+Force 12: 7
+
+Training Dataset for kdfw (size 500):
+Force 1:  0
+Force 2:  0
+Force 3:  0
+Force 4:  45
+Force 5:  329
+Force 6:  544
+Force 7:  704
+Force 8:  390
+Force 9:  313
+Force 10: 126
+Force 11: 42
+Force 12: 22
+
+Complete Dataset for kdfw (size 500):
+Force 1:  0
+Force 2:  0
+Force 3:  1
+Force 4:  55
+Force 5:  401
+Force 6:  673
+Force 7:  891
+Force 8:  488
+Force 9:  385
+Force 10: 165
+Force 11: 51
+Force 12: 29
+
+Spike Data for kdfw (size 500):
+Force 1:  0
+Force 2:  0
+Force 3:  0
+Force 4:  1
+Force 5:  11
+Force 6:  29
+Force 7:  29
+Force 8:  16
+Force 9:  9
+Force 10: 4
+Force 11: 1
+Force 12: 0
+

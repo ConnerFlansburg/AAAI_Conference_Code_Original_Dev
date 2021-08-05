@@ -1,0 +1,60 @@
+Testing Dataset for kcys (size 500):
+Force 0:  6
+Force 1:  0
+Force 2:  0
+Force 3:  0
+Force 4:  1
+Force 5:  23
+Force 6:  98
+Force 7:  182
+Force 8:  115
+Force 9:  95
+Force 10: 51
+Force 11: 36
+Force 12: 21
+
+Training Dataset for kcys (size 500):
+Force 0:  0
+Force 1:  0
+Force 2:  0
+Force 3:  0
+Force 4:  6
+Force 5:  96
+Force 6:  359
+Force 7:  710
+Force 8:  439
+Force 9:  431
+Force 10: 230
+Force 11: 149
+Force 12: 96
+
+Complete Dataset for kcys (size 500):
+Force 0:  6
+Force 1:  0
+Force 2:  0
+Force 3:  0
+Force 4:  7
+Force 5:  119
+Force 6:  457
+Force 7:  892
+Force 8:  554
+Force 9:  526
+Force 10: 281
+Force 11: 185
+Force 12: 117
+
+Spike Data for kcys (size 500):
+Force 0:  0
+Force 1:  0
+Force 2:  0
+Force 3:  0
+Force 4:  1
+Force 5:  7
+Force 6:  7
+Force 7:  32
+Force 8:  17
+Force 9:  21
+Force 10: 5
+Force 11: 7
+Force 12: 3
+
