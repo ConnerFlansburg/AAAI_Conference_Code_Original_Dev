@@ -274,8 +274,12 @@ def main():
     train_sets: typ.Dict[int, typ.Dict] = defaultdict(dict)
     
     # keys: smooth iteration, values: permutation 
-    perm = {}
-    
+    # since we are now using a different model than ridge regression, 
+    # read in the pickled file & used the previous permutation
+    # * Read in the Pickled Record * #
+    jar: str = str(pth.Path.cwd() / 'output' / f'{FILE}' / 'perm_dictionary.p')
+    perm: typ.Dict[int, typ.Dict[int, float]] = pickle.load(open(jar, "rb"))
+
     for s in range(SMOOTH_ITERATIONS):
 
         # * Create Permutation * #
@@ -324,19 +328,19 @@ def main():
                 # * Perform linear regression * #
                 assert len(current_instances) == current_size  # check that dimensions are correct
                 assert len(current_labels) == current_size     # check that dimensions are correct
-                perm[f"{s} {b} instances"] = current_instances
-                perm[f"{s} {b} labels"] = current_labels  # store the training data in the dictionary
                 # run a linear regression
                 # clf = LinearRegression(fit_intercept=True).fit(current_instances, current_labels)
                 # clf = Lasso(0.01)     # run a Lasso Regression
-                clf = Ridge(0.01)     # run a Ridge Regression
-                # clf = MLPRegressor(     # run a Neural Network
-                #     hidden_layer_sizes=(100, 100),
-                #     activation='tanh',
-                #     random_state=SEED
-                # )
-                
-                clf.fit(current_instances, current_labels)  # fit the model with the current training set
+                # clf = Ridge(0.01)     # run a Ridge Regression
+                clf = MLPRegressor(     # run a Neural Network
+                    hidden_layer_sizes=(100, 100),
+                    activation='tanh',
+                    random_state=SEED
+                )
+                # get the values from the perm dict
+                instances: typ.List[int] = perm[f"{s} {b} instances"]
+                labels: typ.List[int]  = perm[f"{s} {b} labels"]
+                clf.fit(instances, labels)  # fit the model with the current training set
 
                 # get the last partition that was added to our training data
                 entry: typ.List[float] = our_permuted_training_labels[last_size:current_size]
@@ -386,10 +390,6 @@ def main():
     # pickle the spike record storing it in a file for create plot
     jar: str = str(pth.Path.cwd() / 'output' / f'{FILE}' / 'train_set_record.p')
     pickle.dump(train_sets, open(jar, 'wb'))
-    
-    # pickle the spike record storing it in a file for create plot
-    jar: str = str(pth.Path.cwd() / 'output' / f'{FILE}' / 'perm_dictionary.p')
-    pickle.dump(perm, open(jar, 'wb'))
 
     # * Create the Median & Average Confusion Matrices * #
     # for each bucket number find the average/median confusion matrix

@@ -751,7 +751,7 @@ if __name__ == "__main__":
 
     # * Plot the Confusion Matrix * #
     plot_errors(['kdfw', 'kcys', 'kroa'])
-    # plot_errors(['kdfw'])
+    # plot_errors(['kcys'])
 
     # * Plot the Spike for the Worst Permutation * #
     p = find_worst_permutation('kdfw', 500)
