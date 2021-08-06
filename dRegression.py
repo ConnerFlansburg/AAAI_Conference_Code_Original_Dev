@@ -326,7 +326,8 @@ def main():
                 # clf = Lasso(0.01)     # run a Lasso Regression
                 # clf = Ridge(0.01)     # run a Ridge Regression
                 clf = MLPRegressor(     # run a Neural Network
-                    hidden_layer_sizes=(100, 100, 100, 100),
+                    #hidden_layer_sizes=(100, 100, 100, 100),
+                    hidden_layer_sizes=(100, 100),
                     activation='tanh',
                     random_state=SEED
                 )
